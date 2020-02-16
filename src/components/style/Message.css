@@ -1,0 +1,36 @@
+.message_left {
+    background-color: #BADFDB;
+    width: 35vw;
+    margin: 10px;
+    padding: 25px;
+    border-radius: 5px;
+}
+
+.message_left h1 {
+    color: #F8A978;
+}
+
+.message_right h1 {
+    color: #F8A978;
+}
+
+.message_right {
+    margin: 10px;
+    background-color: #BADFDB;
+    width: 35vw;
+    margin-left: 38vw;
+    padding: 25px;
+    border-radius: 5px;
+}
+
+@media(max-width: 850px) {
+    .message_left {
+        width: 45vw;
+        margin-left: 5vw;
+    }
+
+    .message_right {
+        width: 45vw;
+        margin-left: 50vw;
+    }
+}

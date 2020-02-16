@@ -1,0 +1,118 @@
+.sidebar {
+    position: fixed;
+    height: 100vh;
+    width: 25vw;
+    padding-top: 20px;
+    background-color: #BADFDB;
+}
+
+.sidebar .header {
+    font-size: 50px;
+    width: 100%;
+    text-align: center;
+    color: #F8A978;
+    padding-bottom: 20px;
+}
+
+.main {
+    margin-left: 25vw;
+    max-width: 75vw;
+    min-width: 75vw;
+    min-height: 100vh;
+    background-color: #FCF9EA;
+}
+
+.main .header {
+    background-color: #FFC5A1;
+    color: black;
+    padding: 30px;
+    position: fixed;
+    width: 75vw;
+    height: 100px;
+    margin-left: 25vw;
+    overflow: hidden;
+}
+
+.main .messages {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: center;
+    margin-top: 110px;
+    margin-bottom: 11vh;
+    overflow-y: scroll;
+    width: 75vw;
+    overflow-y: auto;
+}
+
+.send_message {
+    position: fixed;
+    height: 10vh;
+    width: 75vw;
+    margin-left: 25vw;
+    margin-bottom: 10px;
+    background-color: #FFC5A1;
+    margin-top: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.send_message .input_text {
+    margin-left: 3.5vw;
+    width: 90%;
+    height: 8vh;
+    font-size: 5vh;
+    background-color: #FCF9EA;
+    border: 3px solid white;
+    border-bottom-width: 3px;
+    transition: 0.5s border;
+    outline-width: 0px;
+} 
+
+.send_message .input_text:focus {
+    border-bottom: 3px solid black;
+}
+@media(max-width: 850px) {
+    .sidebar {
+        z-index: 9;
+        margin-left: -100vw;
+        width: 100vw;
+        transition: 0.5s;
+    }
+
+    .main {
+        margin-left: 0px;
+        max-width: 100vw;
+        overflow: hidden;
+    }
+
+    .main .header {
+        margin-left: 0px;
+        width: 100vw;
+    }
+
+    .send_message {
+        margin-left: 0px;
+        width: 100vw;
+    }
+
+    .main .messages {
+        width: 100vw;
+        margin-left: 0px;
+    }
+
+    .bar_top {
+        position: fixed;
+        background-color: black;
+        top: 10px;
+        z-index: 100;
+        left: 85vw;
+        text-align: center;
+        color: white;
+        right: 5vw;
+        height: 50px;
+        overflow: hidden;
+        cursor: pointer;
+    }
+}

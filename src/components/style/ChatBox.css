@@ -1,0 +1,10 @@
+.chat_box {
+    padding: 20px;
+    background: #FCF9EA;
+    border-radius: 25px;
+    margin: 10px;
+}
+
+.chat_box h1 {
+    color: #F8A978;
+}
